@@ -1,85 +1,281 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GospelPoems — The Global Home for Gospel Poetry</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Gospel Poem.css">
+</head>
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-      <a class="navbar-brand" href="#" style="color:black"><img src="BRAND.jpg" width="30" height="30" class="d-inline-block align-top" alt="">GospelPoems</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- ======================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="BRAND.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        GospelPoems
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Explore Poems</a>
+            <ul class="dropdown-menu" aria-labelledby="navDropdown">
+              <li><a class="dropdown-item" href="Jesus.html">Jesus Christ</a></li>
+              <li><a class="dropdown-item" href="Holy Spirit.html">Holy Spirit</a></li>
+              <li><a class="dropdown-item" href="Christianity.html">Christianity</a></li>
+              <li><a class="dropdown-item" href="Weightiermatters.html">Weightier Matters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gospel Poem.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#join">Join</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html" style="color:black">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">Poem Themes</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Jesus.html">Jesus Christ</a>
-              <a class="dropdown-item" href="Holy Spirit.html">Holy Spirit</a>
-              <a class="dropdown-item" href="Christianity.html">Christianity</a>
-              <a class="dropdown-item" href="Weightiermatters.html">Weightier Matters</a>
-            </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-    </nav>
-    <div>
-    <div class="jumbotron jumbotron-fluid text-center" style="background:#eee;">
-      <div class="container" style="background: url(welcome.jpeg) no-repeat; background-size:cover; color:white;">
-        <h1 class="display-4">GospelPoems</h1>
-        <p class="lead">By John Igbinijesu</p>
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="hero">
+    <div class="container fade-in">
+      <h1>The Global Home<br>for <span class="gold-accent">Gospel Poetry</span></h1>
+      <p class="lead">Where faith meets verse. A platform for gospel poets worldwide — to publish, discover, and share the Word through poetry.</p>
+      <div class="d-flex flex-wrap gap-3 justify-content-center">
+        <a href="Jesus.html" class="btn-gold">Explore Poems</a>
+        <a href="#join" class="btn-outline-hero">Join as a Writer ↓</a>
       </div>
     </div>
-    </div>
-    <div class="container text-muted">
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="paul&silas.jpeg" class="card-img-top img-fluid">
-            <div class="card-block">
-            </div>
+  </section>
+
+  <!-- ======================================================
+       MISSION — 3 Feature Cards
+  ====================================================== -->
+  <section class="section-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">A Platform Built for <span class="gold-accent">Gospel Poets</span></h2>
+        <p class="section-subtitle">More than a poetry site — a growing community where believers use verse to reach the world.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card fade-in">
+            <span class="feature-icon">✍️</span>
+            <h3>Publish</h3>
+            <p>Share your gospel poems with a global audience. Every voice matters — from first-time writers to seasoned ministers of the Word.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="holyspirit2.jpeg" class="card-img-top img-fluid" style="height:320px;">
-            <div class="card-block">
-            </div>
+        <div class="col-md-4">
+          <div class="feature-card fade-in">
+            <span class="feature-icon">📖</span>
+            <h3>Discover</h3>
+            <p>Browse a growing anthology of faith-inspired poetry organised by theme. Let the words of others strengthen and edify your spirit.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="clarioncall.jpg" class="card-img-top img-fluid" style="height:320px;">
-            <div class="card-block">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="weightiermatters.jpg" class="card-img-top img-fluid" style="height:320px;">
-            <div class="card-block">
-            </div>
+        <div class="col-md-4">
+          <div class="feature-card fade-in">
+            <span class="feature-icon">🌍</span>
+            <h3>Reach the World</h3>
+            <p>Gospel poetry crosses language and culture. Join a movement using verse as an evangelistic and discipleship tool across the globe.</p>
           </div>
         </div>
       </div>
-      <div class="text-center">
-        <h2 class="display-1">Meet the Author</h2>
-        <p></p>
-        <p><a href="Gospel Poem.html"><button class="btn btn-primary btn-lag" type="button" name="button">Pastor John Igbinijesu</button></a></p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FEATURED WRITER
+  ====================================================== -->
+  <section class="section-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Featured Writer</h2>
+        <p class="section-subtitle">Meet the poet who started it all.</p>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="writer-card">
+            <img src="pstjohn.jpg" alt="Pastor John Igbinijesu">
+            <div class="writer-card-body">
+              <span class="writer-badge">Featured Writer #001</span>
+              <h2>Pastor John Igbinijesu</h2>
+              <p>An ordained minister of the Gospel serving as resident Pastor of Word Assembly Beulah House Center under Senior Pastor Philip Igbinijesu. Happily married to Theresa, also an ordained minister, and blessed with five children.</p>
+              <p>His poems — borne from years of biblical reflection — span themes of Jesus Christ, the Holy Spirit, Christianity, and the weightier matters of faith and eternity.</p>
+              <a href="Gospel Poem.html" class="btn-gold">Read His Poems →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-12">
+              <p class="section-title" style="font-family: var(--font-heading); font-style: italic; font-size:1.3rem; color: var(--color-muted);">"I write Gospel Poems to reach others for Christ."</p>
+              <p style="font-family: var(--font-body); color: var(--color-muted); line-height:1.85;">Pastor John's anthology is a testament to what happens when Scripture meets poetic reflection. Over 40 poems across four themes — each one crafted not for literary acclaim, but to bring souls to Jesus Christ.</p>
+            </div>
+            <div class="col-4">
+              <div class="stat-item">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Poems</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Themes</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-item">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Mission</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  </section>
+
+  <!-- ======================================================
+       POEM PREVIEWS
+  ====================================================== -->
+  <section class="section-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Explore the <span class="gold-accent">Anthology</span></h2>
+        <p class="section-subtitle">Four themes, one message — the transforming power of the Gospel.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Jesus Christ -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="poem-card">
+            <img src="paul&silas.jpeg" alt="Caught Up For Jesus">
+            <div class="poem-card-body">
+              <span class="theme-badge">Jesus Christ</span>
+              <h4>Caught Up For Jesus</h4>
+              <p class="poem-excerpt">"Like the jailer of Philippi,<br>Like Valentine Burke, I beseech you come to Christ."</p>
+              <a href="Jesus.html#a1" class="poem-card-link">Read Poem →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Holy Spirit -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="poem-card">
+            <img src="holyspirit2.jpeg" alt="Holy Spirit">
+            <div class="poem-card-body">
+              <span class="theme-badge">Holy Spirit</span>
+              <h4>Holy Spirit</h4>
+              <p class="poem-excerpt">"Oh have you tasted the living water?<br>His works are gleaming vanguard of God's grace."</p>
+              <a href="Holy Spirit.html#b1" class="poem-card-link">Read Poem →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Christianity -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="poem-card">
+            <img src="clarioncall.jpg" alt="Clarion Call">
+            <div class="poem-card-body">
+              <span class="theme-badge">Christianity</span>
+              <h4>Clarion Call</h4>
+              <p class="poem-excerpt">"In Christ only we have our redemption —<br>Having heard, there is no excuse."</p>
+              <a href="Christianity.html#c1" class="poem-card-link">Read Poem →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weightier Matters -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="poem-card">
+            <img src="weightiermatters.jpg" alt="Weightier Matters">
+            <div class="poem-card-body">
+              <span class="theme-badge">Weightier Matters</span>
+              <h4>Weightier Matters</h4>
+              <p class="poem-excerpt">"You have a soul to save,<br>There is a hell to escape, a heaven to gain."</p>
+              <a href="Weightiermatters.html#d1" class="poem-card-link">Read Poem →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-4">
+        <a href="Gospel Poem.html" class="btn-gold">View Full Anthology</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       JOIN THE MOVEMENT
+  ====================================================== -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <h2>Join the <span class="gold-accent">Movement</span></h2>
+      <p class="lead">
+        We are building the world's first dedicated platform for gospel poets.
+        Be among the first to know when we launch — and secure your place as a founding writer.
+      </p>
+      <form class="join-form" action="https://formspree.io/f/xnjblgpp" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-gold">Notify Me</button>
+      </form>
+      <p style="color:rgba(255,255,255,0.45); font-size:0.8rem; margin-top:1.25rem;">
+        No spam. Just the launch announcement when we're ready.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>GospelPoems</h5>
+          <p>The global home for gospel poetry. Where faith meets verse and souls are reached for Christ.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore Poems</h5>
+          <ul>
+            <li><a href="Jesus.html">Jesus Christ</a></li>
+            <li><a href="Holy Spirit.html">Holy Spirit</a></li>
+            <li><a href="Christianity.html">Christianity</a></li>
+            <li><a href="Weightiermatters.html">Weightier Matters</a></li>
+            <li><a href="Benediction.html">Benediction</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>
+            <strong style="color:rgba(255,255,255,0.75);">Author:</strong><br>
+            <a href="mailto:igbinijesujohn@gmail.com">igbinijesujohn@gmail.com</a><br><br>
+            <strong style="color:rgba(255,255,255,0.75);">Developer:</strong><br>
+            <a href="mailto:exenexmedia@gmail.com">exenexmedia@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 GospelPoems &nbsp;&middot;&nbsp; All rights reserved &nbsp;&middot;&nbsp; Poems by Pastor John Igbinijesu
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

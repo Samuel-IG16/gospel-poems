@@ -1,60 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Benediction</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-     body{
-       width: 100%;
-       height: 400px;
-       background-image: url('ben.jpeg');
-       background-size: 100% 100%;
-       color: white;
-       background-repeat: no-repeat;
-     }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-      <a class="navbar-brand" href="#" style="color:black"><img src="BRAND.jpg" width="30" height="30" class="d-inline-block align-top" alt="">GospelPoems</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benediction — GospelPoems</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Gospel Poem.css">
+</head>
+<body style="padding-top: 0;">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: rgba(13,27,42,0.6) !important; backdrop-filter: blur(4px);">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="BRAND.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        GospelPoems
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html" style="color:black">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">Poem Themes</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Jesus.html">Jesus Christ</a>
-              <a class="dropdown-item" href="Holy Spirit.html">Holy Spirit</a>
-              <a class="dropdown-item" href="Christianity.html">Christianity</a>
-              <a class="dropdown-item" href="Weightiermatters.html">Weightier Matters</a>
-            </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-    </nav>
-    <div></div>
-    <div class="text-center">
-      <div class="container">
-        <h1 class="display-4">GospelPoems</h1>
-        <p class="lead">By John Igbinijesu</p>
-        <p class="lead">As you peruse the poems, You are edified</p>
-        <p class="lead">Jesus is Glorified, The devil vilified</p>
-        <p class="lead">Recieve His blessing through our saviour crucified</p>
-        <p class="lead" id="right">Amen.</p>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Explore Poems</a>
+            <ul class="dropdown-menu" aria-labelledby="navDropdown">
+              <li><a class="dropdown-item" href="Jesus.html">Jesus Christ</a></li>
+              <li><a class="dropdown-item" href="Holy Spirit.html">Holy Spirit</a></li>
+              <li><a class="dropdown-item" href="Christianity.html">Christianity</a></li>
+              <li><a class="dropdown-item" href="Weightiermatters.html">Weightier Matters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gospel Poem.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#join">Join</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </nav>
+
+  <!-- BENEDICTION FULL-PAGE SECTION -->
+  <section class="benediction-page">
+    <div class="container">
+      <div class="benediction-content fade-in">
+        <h1>GospelPoems</h1>
+        <div class="benediction-poem">
+          <p>By John Igbinijesu</p>
+          <p>As you peruse the poems, You are edified</p>
+          <p>Jesus is Glorified, The devil vilified</p>
+          <p>Receive His blessing through our Saviour crucified</p>
+        </div>
+        <p class="benediction-amen">Amen.</p>
+        <div class="mt-5">
+          <a href="index.html" class="btn-gold">← Return Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGINATION (minimal, below hero) -->
+  <div style="background-color: var(--color-navy); padding: 1.5rem 0;">
+    <div class="container">
+      <nav aria-label="Site navigation">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
+          <li class="page-item"><a class="page-link" href="Gospel Poem.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="Jesus.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="Holy Spirit.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="Christianity.html">4</a></li>
+          <li class="page-item"><a class="page-link" href="Weightiermatters.html">5</a></li>
+          <li class="page-item active"><a class="page-link" href="Benediction.html">Benediction</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
