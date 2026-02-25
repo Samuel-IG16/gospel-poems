@@ -62,7 +62,7 @@ The join form on `index.html` uses [Formspree](https://formspree.io). The endpoi
 
 ## Developer
 
-**Samuel Igbinijesu** — exenexmedia@gmail.com
+**Samuel Igbinijesu** — productsmithhq@gmail.com
 
 ---
 
